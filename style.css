@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* animation */
+    background: linear-gradient(-45deg,#D16BA5, #86A8E7,#5FFBF1,#23d5ab);
+    background-size: 400% 400%;
+    position: relative;
+    animation: gradient 35s ease-in-out infinite;
+
+}
+
+/* animtion key frames */
+@keyframes gradient{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+.container{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap:25px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.container .box1{
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    position: relative;
+    padding: 20px 40px 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    text-align: center;
+    margin:50px 0 !important;
+
+}
+
+.accordion-button small {
+    margin-left: 4em;
+}
+
+
+.error{
+    color:pink;
+    margin-top:-20px;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+/*LIST GROUPS */
+
+.list-group-item { 
+    background: transparent;
+}
+
+.accordion-item{
+    background: transparent;
+    border: none;
+    padding: 0;
+    
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.accordion-button {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 25px;
+    border-top: 25px;
+    margin: -15px;
+    
+}
+
+
+
+
+
+    
+
+
+
+
+
